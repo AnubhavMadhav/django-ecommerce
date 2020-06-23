@@ -1,6 +1,7 @@
 from .base import *
 
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = True
+# DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = ['ecommerceungrezi.herokuapp.com']
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -17,7 +18,7 @@ DATABASES = {
         'USER': config('DB_USER'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
-        'PORT': ''
+        'PORT': '',
     }
 }
 
